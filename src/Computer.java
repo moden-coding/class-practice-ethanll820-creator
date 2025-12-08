@@ -19,11 +19,16 @@ public class Computer {
     }
 
     public void restart(){
-        batteryloss = 0;
+        batteryloss = 1;
     }
 
     public void run1hour(){
-        batterypercent = batterypercent - 10;
+        batterypercent = batterypercent - (5*batteryloss);
+    }
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "This computer is " + owner + "'s" + ", it is a " + brand +" & it has "+batterypercent+"% battery left";
     }
 
 
