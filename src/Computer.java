@@ -17,6 +17,12 @@ public class Computer {
         batteryloss = batteryloss + 1;
 
     }
+    public void closewindow(){
+        batteryloss = batteryloss -1;
+    }
+    public void charge1hour(){
+        batterypercent = batterypercent + 25;
+    }
 
     public void restart(){
         batteryloss = 1;

@@ -11,6 +11,15 @@ public class App {
     Ethans.restart();
     Ethans.run1hour();
     System.out.println(Ethans);
+    Ethans.charge1hour();
+    System.out.println(Ethans);
+    Ethans.newwindow();
+    Ethans.newwindow();
+    Ethans.run1hour();
+    System.out.println(Ethans);
+    Ethans.closewindow();
+    Ethans.run1hour();
+    System.out.println(Ethans);
     }
 
 }
